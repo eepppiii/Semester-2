@@ -18,12 +18,11 @@ public class RoyalGarden {
 
     public static void main(String[] args) {
 
-        // Data stok bunga (baris = cabang, kolom = jenis bunga)
         int[][] stokBunga = {
-            {10, 5, 15, 7},   // RoyalGarden 1
-            {6, 11, 9, 12},   // RoyalGarden 2
-            {2, 10, 10, 5},   // RoyalGarden 3
-            {5, 7, 12, 9}     // RoyalGarden 4
+            {10, 5, 15, 7},   
+            {6, 11, 9, 12},
+            {2, 10, 10, 5},   
+            {5, 7, 12, 9}     
         };
 
         // Harga bunga
@@ -38,7 +37,6 @@ public class RoyalGarden {
 
         System.out.println("=== Laporan Pendapatan RoyalGarden ===");
 
-        // Perulangan untuk tiap cabang
         for (int i = 0; i < stokBunga.length; i++) {
 
             int pendapatan = hitungPendapatan(stokBunga[i], harga);
